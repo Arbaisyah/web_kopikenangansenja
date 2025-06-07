@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kopi Kenangan Senja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo"><span>kenangan</span><strong>senja.</strong></div>
+
+      <!-- Menu icon for mobile -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <!-- Menu links -->
+      <ul class="nav-links" id="nav-links">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#tentang-kami">Tentang Kami</a></li>
+               <li><a href="#menu">Menu</a></li>
+               <li><a href="#kontak">Kontak</a></li>
+             </ul>
+
+
+      <!-- Icons -->
+      <div class="icon">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Mari Nikmati <br><span>Secangkir <span class="highlight">Kopi</span></span></h1>
+      <p>Kadang, satu cangkir kopi di tempat yang tenang bisa lebih menyembuhkan daripada seribu kata dari keramaian.
+
+               .</p>
+      <a href="#" class="btn">Beli Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+<section id="tentang-kami" class="tentang-kami">
+               <div class="container">
+                 <h2 class="judul-section"><span>Tentang</span> Kami</h2>
+                 <div class="content">
+                   <div class="image">
+                     <img src="img/kopi.jpg" alt="Kopi Kenangan Senja" />
+                   </div>
+                   <div class="text">
+                     <h3>Kenapa memilih kopi kami?</h3>
+                     <p>Kami menyajikan kopi dengan biji pilihan, diseduh dengan sepenuh hati, untuk memastikan setiap cangkir yang kamu nikmati punya cita rasa yang tak terlupakan.
+
+               </p>
+                     <p>Dari biji kopi terbaik nusantara hingga tangan-tangan terampil yang meraciknya, kami hadirkan secangkir ketenangan dalam kesibukan harimu.
+
+               </p>
+
+               <p>Di setiap cangkir Kopi Kenangan Senja, ada cerita yang kami racik: tentang rasa, tentang waktu, dan tentang momen yang ingin kamu ulangi.</p>
+                   </div>
+                 </div>
+               </div>
+             </section>
+
+             <section id="menu" class="menu">
+               <div class="container">
+                 <h2 class="judul-section"><span>Menu</span> Kami</h2>
+                 <p class="deskripsi-menu">Temukan beragam pilihan kopi favorit, mulai dari klasik hingga kreasi khas yang hanya ada di Kopi Kenangan Senja.
+
+                              </p>
+
+                 <div class="menu-list">
+                   <div class="menu-item">
+                     <img src="img/espresso.jpg" alt="Espresso">
+                     <h3>- Espresso -</h3>
+                     <p>IDR 15K</p>
+                   </div>
+                   <div class="menu-item">
+                     <img src="img/americano.jpeg" alt="Americano">
+                     <h3>- Americano -</h3>
+                     <p>IDR 18K</p>
+                   </div>
+                   <div class="menu-item">
+                     <img src="img/latte.jpeg" alt="Latte">
+                     <h3>- Latte -</h3>
+                     <p>IDR 20K</p>
+                   </div>
+                   <div class="menu-item">
+                     <img src="img/cappuccino.jpeg" alt="Cappuccino">
+                     <h3>- Cappuccino -</h3>
+                     <p>IDR 22K</p>
+                   </div>
+                   <div class="menu-item">
+                     <img src="img/mocha.jpeg" alt="Mocha">
+                     <h3>- Mocha -</h3>
+                     <p>IDR 23K</p>
+                   </div>
+                   <div class="menu-item">
+                     <img src="img/matcha.jpeg" alt="Matcha">
+                     <h3>- Matcha -</h3>
+                     <p>IDR 25K</p>
+                   </div>
+                 </div>
+               </div>
+             </section>
+
+             <section id="kontak" class="kontak">
+               <h2><span>Kontak</span> Kami</h2>
+               <p>Ada pertanyaan, kritik, atau sekadar ingin menyapa? Kami siap mendengar dan menjawab setiap pesan darimu.
+
+               </p>
+               <div class="row">
+                 <iframe
+                   src="https://www.google.com/maps?q=Bandung&output=embed"
+                   allowfullscreen=""
+                   loading="lazy"
+                   class="map"
+                 ></iframe>
+                 <form action="">
+                   <div class="input-group">
+                     <i class="fa-solid fa-user"></i>
+                     <input type="text" placeholder="nama" />
+                   </div>
+                   <div class="input-group">
+                     <i class="fa-solid fa-envelope"></i>
+                     <input type="email" placeholder="email" />
+                   </div>
+                   <div class="input-group">
+                     <i class="fa-solid fa-phone"></i>
+                     <input type="text" placeholder="no hp" />
+                   </div>
+                   <button type="submit" class="btn">kirim pesan</button>
+                 </form>
+               </div>
+             </section>
+
+             <footer class="footer">
+               <div class="footer-icons">
+                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                 <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                 <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+               </div>
+
+               <div class="footer-nav">
+                 <a href="#home">Home</a>
+                 <a href="#tentang">Tentang Kami</a>
+                 <a href="#menu">Menu</a>
+                 <a href="#kontak">Kontak</a>
+               </div>
+
+               <div class="footer-credit">
+                 Created by <span>Siti Arbaisyah</span> | 2025
+               </div>
+             </footer>
+
+
+
+</body>
+</html>
